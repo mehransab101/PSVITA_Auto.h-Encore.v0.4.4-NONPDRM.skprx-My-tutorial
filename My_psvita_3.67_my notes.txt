@@ -1,0 +1,83 @@
+all the credit goes to 'TheOfficialFloW'
+
+you have to keep in mind that this works on psvita firmware 3.65, 3.67, 3.68.
+first of all i tried the manual way of installing h-encore on my 3.67 psvita which copied the h-encore correctly but gave an error at the start of it which was due to a temp.bin file which was very confusing i couldnt fix it.
+for manual way of installing go to this link.
+https://github.com/TheOfficialFloW/h-encore
+dont forget to add the 'releases' after the link to see the latest release of this file
+https://github.com/TheOfficialFloW/h-encore/releases
+you download the h-encore.zip file.
+other requirements are.
+1-h-encore
+2-qcma
+3-psvimgtools
+4-pkg2zip
+
+5-and the free DRM demo called bitter smile
+you can download all of these from the hyperlink provided in the github instruction of the github link above.
+-----------------
+follow the steps to install H-encore.
+
+(this method didnt work forme because of the temp.bin file which didnt work and so i used the second method)
+
+
+---------------
+second method
+---------------
++ you download the 'auto.h-encore.v0.4.4'
++ extract it
++ open the folder (you will see two files 1-auto h-encore(which is the application) 2-auto h-encore.exe(which is the XML configuration)
++ before you begin to install the application(auto h-encore), you will need the latest .net frame work i think v4.5 which you download from microsoft website and you install it and the restart you PC.
++ install qcma on your pc if you havent already and the pc should identify you PSN account after you connect it to PC.
++ now after the installation you have to go to the folder 'auto.h-encore.v0.4.4' and execute the application try and have your psvita connected to the pc while the installation does its thing and download the demo and the requirements we need.
++ it might show you the unique id of your psvita before you press the 'start' to begin or like you dont see anything and you have to press 'start'.
++ after the installation is done there might be a note on the screen showing you what you have done or whatever.
++ turn on psvita or plug the usb cable, from the settings menu in the ps vita make sure auto update of your firmware is off and then connect your self to a wifi and close the settings.
++ go to the live area of the psvita and look for the blue icon of h-encore.
++ open it up and see a flash of white and a pink screen and it leads to a black screen with 3 options to choose.
++ first choose install henkaku. which worked fine for me.then if you select instal vitashell it usually fails.
++ choose exit > go to settings >and if you have installed the henkaku correctly you will see a different menu than the ordinary psvitas involving the henkaku settings.
++ now the vitashell wasnt installed (the trick is to hotpot your phone and turn on your Data too, and then from the psp settings choose the hotspot and connect to it)
++ now go back to the h-encore application on your vita > and selecet install vitashell after a few tries mine worked perfectly and installed the vitashell with a progress bar 0% to 100%.choose exit again.
+and now you have the vitashell as an application there too.
+----------------------
++ now you are able to install VPK games on your psvita from the vitashell menu.
+download the VPK application, connect your psvita to PC and on the vitashell screen press 'select' it instantly turns on your pc a flash drive.now the thing is you will not see all the folders here which you need to see.
++ got to control panel, change the view bar to category if it isnt this.
++ choose 'appearance and personalize'>under the 'folder options' there is a 'show hidden files and folders' click on it > in the view section there is a Hidden files and folder>underneath it choose 'show hidden files, folders, and drives.
++ also down there, there was another thing you had to check something 'like show hidden files and folders' or something.click ok and go to the psvita folder opened on PC using the vitashell(select button).
++ extract the vpk game and it should give some kind of an id name for a folder.
++ copy such folder to the folder that you have created on the psvita for example named 'VitaVPK'.
++ now press circle(O) on your vitashell to exit this and close the folder on pc.
++ navigate to your VitaVPK folder on your psvita.
++ while the folder with the unique id is selected press Triangle on your vita. and go to more>install
++ after the installation is finished the folder will be deleted on your psvita.
++ now you can exit vitashell and go to the live area and open the game.
+---------------------------
+if the game is a NoNpDrm:
++ you have to download a plug in from this link:
+https://github.com/TheOfficialFloW/NoNpDrm/releases
++ i downloaded the NoNpDrm v1.2 (nonpdrm.skprx)
++ if your ps vita is the old veresion with the OLED screen that has a memory card you go to ux0 on your vitashell ,or if its the new ones with internal storage you go to ur0 folder from the root of you vitashell app.
++ u open the tai folder there is a config.txt there doesnt matter for now, paste the nonpdrm.skprx file here.
++ open the config.txt file..
++ on the line 3 there is a KERNEL using the left/right direction you create a new line and to edit that line press X.
++ depending on your ur0 or ux0 folder you add this and save this file.
++ ux0:tai/nonpdrm.skprx or ur0:tai/nonpdrm.skprx you save and you exit.
++ now the file(game) that has a unique id folder has to be copied to the app folder inside the ux0 or ur0(again depending on your type of psvita).
++ once you copied that go to the root of your vitashell where you can see different folders(ur0 and ux0).you press 'triangle' and you press x on the 'Refresh LiveArea tm'.
++ after a bit of work it must say like 1 file has been added.
++go to the live area and play your game.
+--------------------
+how to add patch or DLC to nonpdrm games:
+
++ To install games, place your NoNpDrm dump on the “ux0:app” folder of your console.
+
++ To install DLC, place your NoNpDrm DLC on the “ux0:addcont/[GameID]/[DLCFolder]” directory and the needed licenses on the “ux0:license/addcont/[GameID]/[DLCFolder]” directory of your console.
+
++ To install updates, place your NoNpDrm updates on the “ux0:patch/[GameID]” folder of your console.
+
++ After you place all the desired files on the respective locations, go to VitaShell and open the (TRIANGLE) Menu on the Home Screen, select “Refresh Livearea” and wait for it to update the screen with your games.
+
++ NOTE: For NoNpDrm games to save properly they must be mounted on a “ux0:” partition.
+
